@@ -20,5 +20,8 @@ export const ServiceViewerScoreData = {
             console.error("Error loading data:", error);
             return [];
         }
+    },
+    getData(): Promise<ViewerScore[]> {
+        return Promise.resolve(this.loadViewerScoreData());
     }
 }

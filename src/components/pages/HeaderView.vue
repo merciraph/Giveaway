@@ -4,7 +4,7 @@
             <h1>Giveaway du mois de {{ month }}</h1>
         </template>
         <template #content>
-            <Avatar image="/customGiveaway/src/assets/merci_raph.jpg" size="xlarge" shape="circle"/>
+            <Avatar image="https://yt3.googleusercontent.com/OS23bVCOq0ej0P5rXgfmCdre6hwhYVrzMefhZWJFIds1toCxyVldAgXrnAguXOqve3yZIjST=s120-c-k-c0x00ffffff-no-rj" size="xlarge" shape="circle"/>
             <p>Une fois par stream vous pouvez acheter cette récompense qui vous donne un point, et une fois par mois on tire au hasard une personne parmi les 20 qui ont le plus de points qui gagne 20€ de RP !</p>
         </template>
     </Card>

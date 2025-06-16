@@ -7,7 +7,7 @@ import { ServiceViewerScoreData } from '@/service/ServiceViewerScoreData';
 import { Card } from 'primevue';
 import { ref } from 'vue';
 
-const synched = new Date();
+const synched = new Date(__BUILD_TIME__);
 const tableData = ref(ServiceViewerScoreData.loadViewerScoreData());
 const filters = ref({ 
     username: { value: null, matchMode : FilterMatchMode.CONTAINS },
@@ -40,7 +40,7 @@ const size = "small";
         </DataTable>
         </template>
         <template #footer>
-            <p>Synchronisé pour la dernière fois le {{ synched.toLocaleDateString() }} à {{ synched.getHours() + ":" + synched.getMinutes() }}</p>
+            <p>Synchronisé pour la dernière fois le {{ synched.toLocaleDateString() }} à {{ synched.getHours() + ":" + synched.getMinutes().toString().padStart(2,'0') }}</p>
         </template>
     </Card>
 </template>

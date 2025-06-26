@@ -12,7 +12,7 @@ Interface de visualisation du csv déployé en GitHub Pages
     - Simplement remplir la variable `GITEXE=` avec la valeur `git`
 
 # PARAMETRAGE
-
+- Dupliquer le fichier `config.bat.example` en `config.bat`
 - Remplir le fichier `config.bat` avec les informations demandées
 ```bat
 set PROJECTFOLDER=path/to/project/

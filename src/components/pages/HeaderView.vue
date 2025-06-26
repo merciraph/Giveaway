@@ -1,9 +1,9 @@
 <template>
-    <Card>
-        <template #title>
+    <Card class="card">
+        <template #title class="item1">
             <h1>Giveaway du mois de {{ month }}</h1>
         </template>
-        <template #content>
+        <template #content class="item2">
             <Avatar image="/customGiveaway/merci_raph.jpg" size="xlarge" shape="circle"/>
             <p>Une fois par stream vous pouvez acheter une récompense dans la boutique de points de la chaîne. </p>
             <p>Elle vous donne un point. Une fois par mois on tire au hasard une personne parmi les 20 qui ont le plus de points</p>

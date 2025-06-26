@@ -1,27 +1,27 @@
 @import './base.css';
 
-#app {
-  margin: auto;
-  padding: 2rem;
+.main-container {
+  max-width: 95vw;
+  max-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.header-container {
+  margin: 0 auto 10px auto;
+  align-self: stretch;
+  min-width: 80vw;
 }
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.table-container {
+  margin: 0 auto 10px auto;
+  align-self: stretch;
+  flex-grow: 1;
+  min-height: 60vh;
+  min-width: 80vw;
 }
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.footer-container {
+  align-self: stretch;
 }

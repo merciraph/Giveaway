@@ -7,8 +7,14 @@ import FooterView from './components/pages/FooterView.vue';
 
 <template>
   <div class="main-container">
-    <HeaderView />
-    <TableView />
-    <FooterView />
+    <div class="header-container">
+        <HeaderView />
+    </div>
+    <div class="table-container">
+      <TableView />
+    </div>
+    <div class="footer-container">
+      <FooterView />
+    </div>
   </div>
 </template>

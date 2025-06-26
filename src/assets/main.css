@@ -11,17 +11,17 @@
 }
 
 .header-container {
-  margin: 0 auto 10px auto;
+  margin: auto;
   align-self: stretch;
   min-width: 80vw;
 }
 .table-container {
-  margin: 0 auto 10px auto;
+  margin: auto;
   align-self: stretch;
   flex-grow: 1;
-  min-height: 55vh;
   min-width: 80vw;
 }
 .footer-container {
+  margin: auto;
   align-self: stretch;
 }

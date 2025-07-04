@@ -1,7 +1,7 @@
 <template>
     <Card class="card">
         <template #title class="item1">
-            <h1>Giveaway du mois de {{ month }}</h1>
+            <h2>Giveaway du mois de {{ month }}</h2>
         </template>
         <template #content class="item2">
             <Avatar image="/customGiveaway/merci_raph.jpg" size="xlarge" shape="circle"/>

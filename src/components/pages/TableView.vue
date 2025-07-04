@@ -20,7 +20,7 @@ const size = "small";
 <template>
     <Card>
         <template #content>
-            <DataTable :size="size" v-model:filters="filters" :value="tableData" scrollable scrollHeight="45vh" paginator :rows="10" :rowsPerPageOptions="[5, 10, 20, 50, 100]" filterDisplay="menu" :loading="loading"
+            <DataTable :size="size" v-model:filters="filters" :value="tableData" scrollable scrollHeight="45vh" paginator :rows="60" :rowsPerPageOptions="[5, 10, 25, 50, 60, 100, 200]" filterDisplay="menu" :loading="loading"
                 :globalFilterFields="['username']">
                 <template #header>
                         <InputText v-model="filters['username'].value" placeholder="Rechercher un utilisateur" />

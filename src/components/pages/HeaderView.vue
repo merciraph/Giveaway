@@ -1,5 +1,5 @@
 <template>
-    <Panel toggeable>
+    <Panel toggeable style="margin: 5px">
         <template #header>
             <Avatar image="/Giveaway/merci_raph.jpg" size="xlarge" shape="circle"/>
             <h1>Giveaway du mois de {{ month }}</h1>

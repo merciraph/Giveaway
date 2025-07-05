@@ -14,7 +14,7 @@ const filters = ref({
 });
 const loading = false;
 const size = "small";
-const toKeep : number = 22;
+const toKeep : number = 50;
 </script>
 
 

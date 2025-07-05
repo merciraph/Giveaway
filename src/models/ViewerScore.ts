@@ -4,5 +4,6 @@ export type ViewerScore = {
 };
 
 export type ViewerScoreWithRank = ViewerScore & {
+    id: number;
     rank: number;
 };

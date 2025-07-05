@@ -26,6 +26,7 @@ export const ServiceViewerScoreData = {
     },
     rankViewerScores(viewerScores: ViewerScore[]): ViewerScoreWithRank[] {
         const sortedScores : ViewerScore[] = [...viewerScores].sort((a, b) => parseFloat(b.score) - parseFloat(a.score));
+        let id = 0;
         let rank : number = 1;
         let diff : number = 0;
         let previousScore: number = parseFloat(sortedScores[0].score);
@@ -38,7 +39,8 @@ export const ServiceViewerScoreData = {
                 diff++;
             }
             previousScore = currentScore;
-            return { ...score, rank };
+            id++;
+            return { ...score, id, rank };
         });
     }
 }

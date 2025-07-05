@@ -8,13 +8,12 @@ import { Card } from 'primevue';
 import { ref } from 'vue';
 
 const synched = new Date(__BUILD_TIME__);
-const tableData = ref(ServiceViewerScoreData.rankViewerScores(ServiceViewerScoreData.loadViewerScoreData()));
+const tableData = ServiceViewerScoreData.rankViewerScores(ServiceViewerScoreData.loadViewerScoreData());
 const filters = ref({ 
     username: { value: null, matchMode : FilterMatchMode.CONTAINS },
 });
 const loading = false;
 const size = "small";
-const rank = ref(1);
 </script>
 
 
@@ -28,19 +27,24 @@ const rank = ref(1);
                 </template>
                 <template #empty> Aucun utilisateur correspondant dans la liste !</template>
                 <template #loading> Chargement...</template>
-                <Column field="rank" header="Rang" sortable style="min-width: 6rem">
+                <Column field="username" header="Place" sortable filterField="index" style="min-width: 8rem">
                     <template #body="{ data }">
-                        {{ data.rank }}
+                        {{ data.id }}
                     </template>
                 </Column>
-                <Column field="username" header="Utilisateur" sortable filterField="username" style="min-width: 12rem">
+                <Column field="username" header="Utilisateur" sortable filterField="username" style="min-width: 8rem">
                     <template #body="{ data }">
                         {{ data.username }}
                     </template>
                 </Column>
-                <Column field="score" header="Score" sortable style="min-width: 12rem">
+                <Column field="score" header="Score" sortable style="min-width: 8rem">
                     <template #body="{ data }">
                         {{ data.score }}
+                    </template>
+                </Column>
+                <Column field="rank" header="Classement" sortable style="min-width: 6rem">
+                    <template #body="{ data }">
+                        {{ data.rank }}
                     </template>
                 </Column>
         </DataTable>

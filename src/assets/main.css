@@ -27,6 +27,22 @@
   align-self: stretch;
 }
 .bold {
-  font-weight: bold;
-  color: #FCCF40
+  font-weight:bold;
+  color: #FCCF40;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.item1 {
+  flex: 1;
+}
+.item2 {
+  flex:1;
+  align-self: center;
 }

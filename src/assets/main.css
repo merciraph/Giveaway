@@ -26,3 +26,7 @@
   margin: auto;
   align-self: stretch;
 }
+.bold {
+  font-weight: bold;
+  color: #FCCF40
+}

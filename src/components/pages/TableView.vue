@@ -14,6 +14,7 @@ const filters = ref({
 });
 const loading = false;
 const size = "small";
+const toKeep : number = 22;
 </script>
 
 
@@ -27,24 +28,35 @@ const size = "small";
                 </template>
                 <template #empty> Aucun utilisateur correspondant dans la liste !</template>
                 <template #loading> Chargement...</template>
-                <Column field="username" header="Place" sortable filterField="index" style="min-width: 8rem">
+                <Column field="index" header="Place" sortable filterField="index" style="width: 10%";>
                     <template #body="{ data }">
-                        {{ data.id }}
+                        <p v-if="data.rank < toKeep" class="bold">
+                            {{ data.id }}
+                        </p>
+                        <p v-else>
+                            {{ data.id }}
+                        </p>
                     </template>
                 </Column>
-                <Column field="username" header="Utilisateur" sortable filterField="username" style="min-width: 8rem">
+                <Column field="username" header="Utilisateur" sortable filterField="username" style="width:60%">
                     <template #body="{ data }">
-                        {{ data.username }}
+                        <p v-if="data.rank < toKeep" class="bold">
+                            {{ data.username }}
+                        </p>
+                        <p v-else>
+                            {{ data.username }}
+                        </p>
+
                     </template>
                 </Column>
-                <Column field="score" header="Score" sortable style="min-width: 8rem">
+                <Column field="score" header="Score" sortable style="width: 25%">
                     <template #body="{ data }">
-                        {{ data.score }}
-                    </template>
-                </Column>
-                <Column field="rank" header="Classement" sortable style="min-width: 6rem">
-                    <template #body="{ data }">
-                        {{ data.rank }}
+                        <p v-if="data.rank < toKeep" class="bold">
+                            {{ data.score }}
+                        </p>
+                        <p v-else>
+                            {{ data.score }}
+                        </p>
                     </template>
                 </Column>
         </DataTable>

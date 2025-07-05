@@ -33,8 +33,8 @@ export const ServiceViewerScoreData = {
         return sortedScores.map((score: ViewerScore) => {
             const currentScore = parseFloat(score.score);
             if (currentScore !== previousScore) {
-                rank += diff + 1;
-                diff = 0;
+                rank += diff;
+                diff = 1;
             } else {
                 diff++;
             }

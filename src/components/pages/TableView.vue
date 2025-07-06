@@ -30,7 +30,7 @@ const toKeep : number = 50;
                 <template #loading> Chargement...</template>
                 <Column field="index" header="Place" sortable filterField="index" style="width: 10%";>
                     <template #body="{ data }">
-                        <p v-if="data.rank < toKeep" class="bold">
+                        <p v-if="data.rank <= toKeep" class="bold">
                             {{ data.id }}
                         </p>
                         <p v-else>
@@ -40,7 +40,7 @@ const toKeep : number = 50;
                 </Column>
                 <Column field="username" header="Utilisateur" sortable filterField="username" style="width:60%">
                     <template #body="{ data }">
-                        <p v-if="data.rank < toKeep" class="bold">
+                        <p v-if="data.rank <= toKeep" class="bold">
                             {{ data.username }}
                         </p>
                         <p v-else>
@@ -51,7 +51,7 @@ const toKeep : number = 50;
                 </Column>
                 <Column field="score" header="Score" sortable style="width: 25%">
                     <template #body="{ data }">
-                        <p v-if="data.rank < toKeep" class="bold">
+                        <p v-if="data.rank <= toKeep" class="bold">
                             {{ data.score }}
                         </p>
                         <p v-else>

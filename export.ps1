@@ -1,4 +1,5 @@
 $THRESHOLD = 50
+$SEPARATOR = "`n"
 
 $data = Import-Csv -Path ".\data\test.csv" -Header "Username", "Value" | Sort-Object -Property { [int]$_.Value } -Descending
 
@@ -9,7 +10,7 @@ $extract = $data | Where-Object { [int]$_.Value -ge $valToGetIn }
 $final = ($extract | ForEach-Object {
     $username = $_.Username
     1..$_.Value | ForEach-Object { $username }
-}) -join ","
+}) -join $SEPARATOR
 
 
 Write-Host "INFOS"

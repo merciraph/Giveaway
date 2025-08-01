@@ -1,4 +1,4 @@
-$THRESHOLD = 50
+$THRESHOLD = 40
 $SEPARATOR = "`n"
 
 $data = Import-Csv -Path ".\data\test.csv" -Header "Username", "Value" | Sort-Object -Property { [int]$_.Value } -Descending

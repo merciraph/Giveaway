@@ -9,16 +9,16 @@
   align-items: center;
   align-content: center;
 }
-
 .header-container {
-  margin: auto;
+  margin-left: 5%;
   align-self: stretch;
   min-width: 80vw;
+  max-height: 50vh;
+  min-height: 30vh;
 }
 .table-container {
   margin: auto;
   align-self: stretch;
-  flex-grow: 1;
   min-width: 80vw;
   max-height: 90vh;
 }
@@ -38,11 +38,17 @@
   align-items: stretch;
   align-content: flex-start;
 }
-
 .item1 {
   flex: 1;
 }
 .item2 {
   flex:1;
   align-self: center;
+}
+.avatar {
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  padding: 5px
+
 }

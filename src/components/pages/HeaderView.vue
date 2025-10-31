@@ -8,7 +8,7 @@
                 <p>Une fois par mois on tire au hasard une personne parmi les 40 qui ont le plus de points. Cette personne gagne 20€ de RP !</p>
                 <p> Les personnes en <b class="bold">gras et jaune</b> sont en course pour être sélectionnées dans le tirage au sort !</p>
                 
-                <p>Les gagnants des mois précédents sont : adjectifs, Mugi Killer Pigs, Viciouso et Anjalbert !</p>
+                <p>Les gagnants des mois précédents sont : adjectifs, Mugi Killer Pigs, Viciouso, Anjalbert et upandie !</p>
     </Panel>
 </template>
 

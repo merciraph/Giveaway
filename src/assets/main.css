@@ -1,26 +1,26 @@
 @import './base.css';
 
 .main-container {
+  margin: 10px;
   max-width: 95vw;
-  max-height: 98vh;
+  max-height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: column;;
   align-items: center;
   align-content: center;
 }
 .header-container {
-  margin-left: 5%;
-  align-self: stretch;
+  display: flex;;
+  margin-top: 10px;
   min-width: 80vw;
-  max-height: 50vh;
-  min-height: 30vh;
+  max-height: 40vh;
+  min-height: 25vh;
 }
 .table-container {
   margin: auto;
   align-self: stretch;
   min-width: 80vw;
-  max-height: 90vh;
+  max-height: 80vh;
 }
 .footer-container {
   margin: auto;
@@ -46,9 +46,7 @@
   align-self: center;
 }
 .avatar {
-  position: absolute;
   left: 1%;
   top: 1%;
-  padding: 5px
-
+  padding: 5px;
 }

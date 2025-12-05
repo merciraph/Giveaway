@@ -3,3 +3,4 @@
 2025,Août,Viciouso
 2025,Septembre,Anjalbert
 2025,Octobre,Upandie
+2025, Novembre, Klisode

@@ -23,7 +23,7 @@ ECHO %date% - %time:~0,5% --- COPIE DU CSV >> script.log
 COPY /Y %CSVFOLDER%file.csv %PROJECTFOLDER%data\test.csv >> script.log
 ECHO %date% - %time:~0,5% --- MISE A JOUR GIT >> script.log
 CD /D %PROJECTFOLDER%
-git add data\test.csv >> script.log
+git add data\test.csv data\winners.txt >> script.log
 git commit -m "Synchro %date% - %time:~0,5%" >> script.log
 git push >> script.log
 ECHO %date% - %time:~0,5% --- FIN DU SCRIPT >> script.log
